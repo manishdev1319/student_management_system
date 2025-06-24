@@ -1,0 +1,245 @@
+/* ===== OCEAN THEME WITH PROFESSIONAL FONT (INTER) ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --ocean-bg: #e0f7fa;
+  --ocean-primary: #0277bd;
+  --ocean-secondary: #4dd0e1;
+  --ocean-dark: #151515;
+  --ocean-light: #b2ebf2;
+  --ocean-text: #004d40;
+  --white: #ffffff;
+  --gray: #f8f9fa;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --radius: 10px;
+}
+
+body {
+  margin: 0;
+  background: var(--ocean-bg);
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  color: var(--ocean-text);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  color: var(--ocean-dark);
+  letter-spacing: 0.3px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--ocean-primary);
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  background: var(--white);
+  padding: 12px 20px;
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar h1 {
+  font-size: 1.6rem;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: var(--ocean-primary);
+  color: white;
+  width: 220px;
+  min-height: 100vh;
+  position: fixed;
+  padding: 20px 0;
+}
+.sidebar h4 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.sidebar a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  font-weight: 400;
+}
+.sidebar a:hover,
+.sidebar a.active {
+  background-color: var(--ocean-dark);
+  transition: 0.3s;
+}
+
+/* Main Content */
+.content {
+  margin-left: 240px;
+  padding: 30px 40px;
+}
+
+/* Cards */
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+/* Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+.table th, .table td {
+  border: 1px solid var(--ocean-light);
+  padding: 12px 16px;
+  text-align: left;
+}
+.table thead {
+  background-color: var(--ocean-primary);
+  color: white;
+}
+.table tbody tr:nth-child(even) {
+  background-color: var(--gray);
+}
+.table tbody tr:hover {
+  background-color: var(--ocean-light);
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+.btn-primary {
+  background-color: var(--ocean-primary);
+  color: white;
+}
+.btn-primary:hover {
+  background-color: var(--ocean-dark);
+}
+.btn-secondary {
+  background-color: var(--ocean-secondary);
+  color: var(--ocean-text);
+}
+.btn-secondary:hover {
+  background-color: #26c6da;
+}
+.btn-danger {
+  background-color: #e53935;
+  color: white;
+}
+.btn-danger:hover {
+  background-color: #c62828;
+}
+.btn-warning {
+  background-color: #fbc02d;
+  color: var(--ocean-text);
+}
+.btn-warning:hover {
+  background-color: #f9a825;
+}
+
+/* Forms */
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid var(--ocean-light);
+  border-radius: var(--radius);
+  background: #fff;
+}
+.form-control:focus {
+  border-color: var(--ocean-secondary);
+  outline: none;
+}
+
+/* Alerts */
+.alert {
+  padding: 12px 20px;
+  border-radius: var(--radius);
+  margin-bottom: 20px;
+}
+.alert-success {
+  background-color: #d0f8ce;
+  color: #2e7d32;
+}
+.alert-danger {
+  background-color: #ffcdd2;
+  color: #c62828;
+}
+.alert-info {
+  background-color: #b2ebf2;
+  color: #006064;
+}
+.alert-warning {
+  background-color: #fff9c4;
+  color: #f57f17;
+}
+
+/* Utilities */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.mt-3 { margin-top: 1rem; }
+.mb-3 { margin-bottom: 1rem; }
+.mt-4 { margin-top: 1.5rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+.p-3 { padding: 1rem; }
+.w-100 { width: 100%; }
+
+/* Login Page Centering */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.login-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 400px;
+}
+.login-card h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--ocean-dark);
+}
+
+/* Mobile Support */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  .content {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
