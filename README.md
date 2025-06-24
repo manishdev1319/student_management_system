@@ -29,23 +29,8 @@ This is a lightweight web application built using Flask for managing student rec
 
 ## Project Structure
 
-1.app.py – Main Flask application file
+The project consists of several organized components. The main file is `app.py`, which contains the core Flask application logic. Supporting files include `requirements.txt` for Python dependencies and `README.txt` for project documentation. Static assets are placed in the `static/` directory, which includes `style.css` for the ocean-themed design and an `images/` folder containing assets like `ocean-bg.jpg` used for the login page background. The `templates/` folder holds all HTML files: `base.html` defines the common layout, while `login.html`, `index.html`, `add.html`, and `edit.html` handle user interface for authentication and student management features.
 
-2.requirements.txt – List of Python dependencies
-
-3.README.txt – Project documentation and instructions
-
-4.static/ – Static files directory
-4.1. style.css – Custom ocean-themed CSS stylesheet
-4.2. images/ – Image assets
-4.2.1. ocean-bg.jpg – Optional background image for login page
-
-5.templates/ – HTML templates folder
-5.1. base.html – Base layout for all pages
-5.2. login.html – Admin login page
-5.3. index.html – Dashboard with list of students
-5.4. add.html – Add student form
-5.5. edit.html – Edit student form
 
 ---
 
