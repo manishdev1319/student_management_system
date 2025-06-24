@@ -31,21 +31,21 @@ This is a lightweight web application built using Flask for managing student rec
 
 student-management-system/
 │
-├── app.py                  -> Main Flask application
+├── app.py                 → Main Flask application
+├── requirements.txt       → Python dependencies
+├── README.txt             → Project description and usage info
+│
 ├── static/
-│   ├── style.css           -> Custom theme styles
+│   ├── style.css          → Custom ocean-themed CSS
 │   └── images/
-│       └── ocean-bg.jpg    -> Optional background for login page
+│       └── ocean-bg.jpg   → Optional login background image
 │
 ├── templates/
-│   ├── base.html           -> Base layout template
-│   ├── login.html          -> Login page
-│   ├── index.html          -> Dashboard (list of students)
-│   ├── add.html            -> Add student form
-│   └── edit.html           -> Edit student form
-│
-├── requirements.txt        -> List of dependencies
-└── README.txt              -> Project documentation (this file)
+│   ├── base.html          → Base layout template
+│   ├── login.html         → Admin login page
+│   ├── index.html         → Student dashboard (list view)
+│   ├── add.html           → Add student form
+│   └── edit.html          → Edit student form
 
 ---
 
