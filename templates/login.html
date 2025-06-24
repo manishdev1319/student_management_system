@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<style>
+  body {
+    background: url("{{ url_for('static', filename='images/ocean-bg.jpg') }}") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+  }
+
+  .login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .login-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .login-card h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #01579b;
+  }
+</style>
+
+<div class="login-wrapper">
+  <form method="POST" class="login-card">
+    <h3>Login</h3>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% for category, msg in messages %}
+        <div class="alert alert-{{ category }}">{{ msg }}</div>
+      {% endfor %}
+    {% endwith %}
+
+    <input class="form-control" type="text" name="username" placeholder="Username" required>
+    <input class="form-control" type="password" name="password" placeholder="Password" required>
+    <button class="btn btn-primary w-100 mt-3">Login</button>
+  </form>
+</div>
+{% endblock %}
