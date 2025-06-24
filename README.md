@@ -38,7 +38,7 @@ This is a lightweight web application built using Flask for managing student rec
 4.static/ – Static files directory
 4.1. style.css – Custom ocean-themed CSS stylesheet
 4.2. images/ – Image assets
-    4.2.1. ocean-bg.jpg – Optional background image for login page
+4.2.1. ocean-bg.jpg – Optional background image for login page
 
 5.templates/ – HTML templates folder
 5.1. base.html – Base layout for all pages
